@@ -107,8 +107,10 @@ nav ul li a {
 .card {
   height: 50vh;
   width: 250px;
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: purple;
+  overflow: hidden;
+  box-shadow: 0 0 10px #000;
 }
 
 .card-img {
@@ -148,7 +150,9 @@ nav ul li a {
   background-color: bisque;
   margin: 0 auto;
   border-radius: 10px;
+  overflow: hidden;
   display: flex;
+  box-shadow: 0 0 10px #000;
 }
 
 .project-text {
@@ -174,7 +178,8 @@ nav ul li a {
 
 #about-container {
   height: 70vh;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   background-color: #575555;
   display: flex;
 }
@@ -216,4 +221,36 @@ nav ul li a {
   background-color: transparent;
   color: #00bfa6;
   border-color: #00bfa6;
+}
+
+#contacts{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.contact-info{
+  overflow: hidden;
+  height: 15vh;
+  width: 300px;
+  background-color: rgb(139, 91, 91);
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+}
+
+.contact-info .contact-img {
+  width: 30%;
+  height: 100%;
+  background-color: #b9df61;
+}
+
+.contact-info .contact-real {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
 }
