@@ -19,16 +19,18 @@ nav ul {
 }
 
 nav ul li {
-  list-style-type: none;
-  margin: 0 30px;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+    list-style-type: none;
+    margin: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
 }
 
 nav ul li a {
   text-decoration: none;
+  color: #000;
 }
 
 #home {
@@ -67,11 +69,10 @@ nav ul li a {
   border-color: #00bfa6;
 }
 
-/* Optional: adding focus/active styles for accessibility */
 #portfolio:focus,
 #contact:focus {
   outline: none;
-  box-shadow: 0 0 10px rgba(0, 191, 166, 0.6); /* Teal shadow for focus */
+  box-shadow: 0 0 10px rgba(0, 191, 166, 0.6);
 }
 
 #home-right {
