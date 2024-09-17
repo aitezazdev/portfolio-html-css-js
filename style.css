@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -9,21 +12,78 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 25px;
-  
 }
 
 nav ul {
-    display: flex;
+  display: flex;
 }
 
-nav ul li{
-    list-style-type: none;
-    margin: 0 30px;
-    font-size: 17px;
-    font-weight: 500;
-    text-transform: uppercase;
+nav ul li {
+  list-style-type: none;
+  margin: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-nav ul li a{
-    text-decoration: none;
+nav ul li a {
+  text-decoration: none;
+}
+
+#home {
+  height: 80vh;
+  display: flex;
+}
+
+#home-left {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#home-left h1 {
+  font-size: 80px;
+}
+
+#home-left button {
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00bfa6;
+  color: white;
+  border: 2px solid #00bfa6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#home-left button:hover {
+  background-color: transparent;
+  color: #00bfa6;
+  border-color: #00bfa6;
+}
+
+/* Optional: adding focus/active styles for accessibility */
+#portfolio:focus,
+#contact:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 191, 166, 0.6); /* Teal shadow for focus */
+}
+
+#home-right {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-right-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
