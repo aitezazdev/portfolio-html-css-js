@@ -135,7 +135,7 @@ nav ul li a {
   font-size: 15px;
 }
 
-#projects-container{
+#projects-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -170,4 +170,50 @@ nav ul li a {
   width: 50%;
   height: 100%;
   background-color: #b9df61;
+}
+
+#about-container {
+  height: 70vh;
+  width: 100%;
+  background-color: #575555;
+  display: flex;
+}
+
+#about-pic {
+  height: 100%;
+  width: 40%;
+  background-color: #00bfa6;
+}
+
+#about-info {
+  height: 100%;
+  width: 60%;
+  background-color: #b9df61;
+  padding: 30px;
+  gap: 20px;
+}
+
+#about-info h4{
+  font-size: 30px;
+  margin: 20px 0;
+  color: #171616;
+}
+
+#about-info button {
+  border-style: none;
+  padding: 12px 20px;
+  margin: 20px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00bfa6;
+  color: white;
+  border: 2px solid #00bfa6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#about-info button:hover {
+  background-color: transparent;
+  color: #00bfa6;
+  border-color: #00bfa6;
 }
