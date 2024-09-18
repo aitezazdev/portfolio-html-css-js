@@ -18,6 +18,10 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
 }
 
 nav ul {
@@ -40,8 +44,13 @@ nav ul li a {
 }
 
 #home {
-  height: 83vh;
+  height: 100vh;
   display: flex;
+  padding-top: 50px;
+}
+
+#iAm{
+  font-family: "myFont";
 }
 
 #home-left {
@@ -57,7 +66,7 @@ nav ul li a {
 
 #triangle {
   position: absolute;
-  top: 0;
+  top: 5%;
   left: 10%;
   z-index: -1;
   height: 150px;
@@ -95,7 +104,7 @@ nav ul li a {
 }
 
 #home-left #portfolio {
-  padding: 10px 20px;
+  padding: 10px 21.5px;
 }
 
 #home-left button:hover {
@@ -104,8 +113,7 @@ nav ul li a {
   border-color: #7453fe;
 }
 
-#portfolio:focus,
-#contact:focus {
+button:active {
   outline: none;
   box-shadow: 0 0 10px rgba(116, 83, 254, 0.6);
 }
@@ -166,7 +174,7 @@ nav ul li a {
   border-radius: 6px;
   overflow: hidden;
   background-color: #f5f5f5;
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px 1px rgba(116, 83, 254, 0.4);
 }
 
 .card-img {
@@ -212,23 +220,26 @@ nav ul li a {
 .project {
   width: 90%;
   height: 60vh;
-  background-color: bisque;
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px 1px rgba(116, 83, 254, 0.4);
 }
 
 .project-text {
   width: 50%;
   height: 100%;
-  background-color: #df6161;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+}
+
+.project-text p {
+  font-family: "myFont";
+  font-size: 16.5px;
 }
 
 .project-text h3 {
@@ -238,29 +249,64 @@ nav ul li a {
 .project-img {
   width: 50%;
   height: 100%;
-  background-color: #b9df61;
+}
+
+.project-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.check-project {
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 130px;
+  margin: 0 auto;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #7453fe;
+  color: white;
+  border: 2px solid #7453fe;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.check-project:hover {
+  background-color: transparent;
+  color: #7453fe;
+  border-color: #7453fe;
 }
 
 #about-container {
-  height: 70vh;
+  height: 80vh;
   width: 90%;
-  margin: 0 auto;
-  background-color: #575555;
+  margin: 50px auto 100px auto;
   display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 1px rgba(116, 83, 254, 0.4);
 }
 
 #about-pic {
   height: 100%;
   width: 40%;
-  background-color: #7453fe;
+}
+
+#about-pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 #about-info {
   height: 100%;
   width: 60%;
-  background-color: #b9df61;
   padding: 30px;
   gap: 20px;
+}
+
+#about-info p {
+  font-family: "myFont";
+  letter-spacing: 0.2px;
 }
 
 #about-info h4 {
@@ -289,7 +335,7 @@ nav ul li a {
 }
 
 #contact {
-  margin: 50px 0;
+  margin: 100px 0;
 }
 
 #contacts {
@@ -301,27 +347,40 @@ nav ul li a {
 .contact-info {
   overflow: hidden;
   height: 15vh;
-  width: 300px;
-  background-color: rgb(139, 91, 91);
+  width: 320px;
   display: flex;
   border-radius: 5px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px 1px rgba(116, 83, 254, 0.4);
 }
 
-.contact-info .contact-img {
-  width: 30%;
+.contact-img {
+  width: 20%;
   height: 100%;
-  background-color: #b9df61;
+}
+
+.contact-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-img i {
+  font-size: 30px;
+  color: #7453fe;
 }
 
 .contact-info .contact-real {
-  width: 70%;
+  width: 80%;
   height: 100%;
   display: flex;
   gap: 5px;
   justify-content: center;
   flex-direction: column;
   padding: 20px;
+}
+
+.contact-real h4 {
+  font-size: 20px;
 }
 
 footer {
@@ -331,17 +390,35 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
+}
+
+#footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-self: unset;
+  align-items: center;
 }
 
 #footer-info strong {
   display: flex;
   justify-content: center;
-  margin: 5px 0;
+  margin: 10px 0;
   font-size: 25px;
 }
 
 #social-icons {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+}
+
+#social-icons i {
+  font-size: 25px;
+  color: #7453fe;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
+}
+
+#social-icons i:hover{
+  color: #6347d3;
 }
