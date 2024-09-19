@@ -49,7 +49,7 @@ nav ul li a {
   padding-top: 50px;
 }
 
-#iAm{
+#iAm {
   font-family: "myFont";
 }
 
@@ -175,6 +175,13 @@ button:active {
   overflow: hidden;
   background-color: #f5f5f5;
   box-shadow: 0 0 10px 1px rgba(116, 83, 254, 0.4);
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  background-color: rgba(116, 83, 254, 0.3);
+  transform: translate(0, -5px);
+  cursor: pointer;
 }
 
 .card-img {
@@ -297,6 +304,10 @@ button:active {
   object-fit: contain;
 }
 
+#about-me {
+  font-size: 40px;
+}
+
 #about-info {
   height: 100%;
   width: 60%;
@@ -341,6 +352,7 @@ button:active {
 #contacts {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 50px;
 }
 
@@ -419,6 +431,6 @@ footer {
   transition: color 0.15s ease-in-out;
 }
 
-#social-icons i:hover{
+#social-icons i:hover {
   color: #6347d3;
 }
