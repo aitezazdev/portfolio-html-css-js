@@ -24,6 +24,11 @@ header {
   z-index: 100;
 }
 
+#zaz {
+  text-decoration: none;
+  color: #000;
+}
+
 #menu-open {
   position: absolute;
   right: 25px;
@@ -69,6 +74,16 @@ nav ul li:hover {
 nav ul li a {
   text-decoration: none;
   color: #000;
+}
+
+nav ul li a:hover {
+  color: #7453fe;
+}
+
+#bulb {
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0 20px;
 }
 
 #home {
@@ -466,4 +481,63 @@ footer {
 
 #social-icons i:hover {
   color: #6347d3;
+}
+
+body.dark-theme {
+  background-color: #0D1117;
+  color: #ffffff;
+}
+
+body.dark-theme header {
+  background-color: #0D1117;
+}
+
+body.dark-theme #zaz{
+  color: #ffffff;
+}
+
+body.dark-theme nav ul li a {
+  color: #ffffff;
+}
+
+body.dark-theme .card,
+body.dark-theme .project,
+body.dark-theme #about-container,
+body.dark-theme .contact-info {
+  background-color: #161B22;
+  box-shadow: 0 0 10px 1px rgba(156, 130, 255, 0.3);
+}
+
+body.dark-theme #about-info h4 {
+  color: #fff;
+}
+
+body.dark-theme #services-text{
+  color: #fff;
+}
+
+body.dark-theme .card h3 {
+  color: #fff;
+}
+
+body.dark-theme .card:hover {
+  background-color: rgba(156, 130, 255, 0.3);
+}
+
+body.dark-theme footer {
+  background-color: #2c2142;
+}
+
+body.dark-theme #moon {
+  display: none;
+}
+
+body.dark-theme #sun {
+  display: inline-block;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+body.dark-theme footer{
+  background-color: #161B22;
 }

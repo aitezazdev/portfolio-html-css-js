@@ -72,6 +72,45 @@
   .check-project {
     font-size: 15.5px;
   }
+
+  #menu-open {
+    display: block;
+    position: absolute;
+    right: 25px;
+  }
+
+  nav ul {
+    display: none;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 100vh;
+    width: 40%;
+    padding: 80px 0;
+    transition: right 0.5s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    backdrop-filter: blur(5px);
+  }
+
+  body.dark-theme nav ul {
+    background-color: rgb(22, 27, 34, 0.8);
+  }
+
+  nav ul li {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+
+  #menu-close {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -153,41 +192,11 @@
 
 @media (max-width: 650px) {
   #home-left h1 {
-      font-size: 47px;
-  }
-
-  #menu-open {
-      display: block;
-      position: absolute;
-      right: 25px;
+    font-size: 47px;
   }
 
   nav ul {
-      display: none;
-      position: fixed;
-      right: -100%;
-      top: 0;
-      background-color: rgba(255, 255, 255, 0.75);
-      height: 100vh;
-      width: 80%;
-      padding: 80px 0;
-      transition: right 0.5s ease-in-out;
-      flex-direction: column;
-      align-items: center;
-      gap: 25px;
-      backdrop-filter: blur(5px);
-  }
-
-  nav ul li {
-    text-align: center;
-    font-size: 18px;
-}
-
-  #menu-close {
-      position: absolute;
-      right: 25px;
-      top: 20px;
-      font-size: 30px;
+    width: 80%;
   }
 }
 
@@ -223,6 +232,9 @@
 
   #about-container {
     width: 95%;
+  }
+  footer {
+    text-align: center;
   }
 }
 
