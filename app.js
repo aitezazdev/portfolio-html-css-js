@@ -48,10 +48,10 @@ menuClose.addEventListener("click", toggleMenu);
 
 // Function to toggle the theme
 const body = document.body;
-const lightIcon = document.getElementById('bulb');
+const bulbIcon = document.getElementById('bulb');
 
 function toggleTheme() {
   body.classList.toggle('dark-theme');
 }
 
-lightIcon.addEventListener('click', toggleTheme);
+bulbIcon.addEventListener('click', toggleTheme);
