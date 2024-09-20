@@ -24,6 +24,22 @@ header {
   z-index: 100;
 }
 
+#menu-open{
+  position: absolute;
+  right: 25px;
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#menu-close {
+  position: absolute;
+  right: 25px;
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
 nav ul {
   display: flex;
 }
@@ -46,7 +62,6 @@ nav ul li a {
 #home {
   height: 100vh;
   display: flex;
-  padding-top: 50px;
 }
 
 #iAm {
@@ -66,7 +81,7 @@ nav ul li a {
 
 #triangle {
   position: absolute;
-  top: 5%;
+  top: 12%;
   left: 10%;
   z-index: -1;
   height: 150px;
@@ -169,7 +184,7 @@ button:active {
 }
 
 .card {
-  height: 50vh;
+  height: 320px;
   width: 280px;
   border-radius: 6px;
   overflow: hidden;
@@ -226,7 +241,7 @@ button:active {
 
 .project {
   width: 90%;
-  height: 60vh;
+  height: 350px;
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
@@ -250,18 +265,24 @@ button:active {
 }
 
 .project-text h3 {
-  font-size: 30px;
+  font-size: 33px;
 }
 
 .project-img {
   width: 50%;
   height: 100%;
+  overflow: hidden;
 }
 
 .project-img img {
   height: 100%;
   width: 100%;
   object-fit: contain;
+  transition: transform 0.4s ease-in-out;
+}
+
+.project-img img:hover {
+  transform: scale(1.02);
 }
 
 .check-project {
@@ -284,7 +305,7 @@ button:active {
 }
 
 #about-container {
-  height: 80vh;
+  /* height: 80vh; */
   width: 90%;
   margin: 50px auto 100px auto;
   display: flex;
@@ -294,7 +315,6 @@ button:active {
 }
 
 #about-pic {
-  height: 100%;
   width: 40%;
 }
 
@@ -358,8 +378,8 @@ button:active {
 
 .contact-info {
   overflow: hidden;
-  height: 15vh;
   width: 320px;
+  padding: 15px;
   display: flex;
   border-radius: 5px;
   box-shadow: 0 0 10px 1px rgba(116, 83, 254, 0.4);
@@ -386,9 +406,9 @@ button:active {
   height: 100%;
   display: flex;
   gap: 5px;
+  padding: 0 20px;
   justify-content: center;
   flex-direction: column;
-  padding: 20px;
 }
 
 .contact-real h4 {
@@ -397,7 +417,7 @@ button:active {
 
 footer {
   padding: 70px 0;
-  background-color: #d3d3d3;
+  background-color: #7553fe13;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -425,7 +445,7 @@ footer {
 }
 
 #social-icons i {
-  font-size: 25px;
+  font-size: 30px;
   color: #7453fe;
   cursor: pointer;
   transition: color 0.15s ease-in-out;
