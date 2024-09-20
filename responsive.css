@@ -167,7 +167,7 @@
       position: fixed;
       right: -100%;
       top: 0;
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.75);
       height: 100vh;
       width: 80%;
       padding: 80px 0;
@@ -175,24 +175,13 @@
       flex-direction: column;
       align-items: center;
       gap: 25px;
+      backdrop-filter: blur(5px);
   }
 
   nav ul li {
-      text-align: center;
-      font-size: 18px;
-      background-color: rgb(240, 240, 240);
-      width: 90%;
-      margin: 0 auto;
-      padding: 10px 0;
-      border-radius: 7px;
-      cursor: pointer;
-      transition: background-color 0.2s, color 0.2s;
-  }
-
-  nav ul li:hover{
-      background-color: #7553fe24;
-      color: #fff;
-  }
+    text-align: center;
+    font-size: 18px;
+}
 
   #menu-close {
       position: absolute;

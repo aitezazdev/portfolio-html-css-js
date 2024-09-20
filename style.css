@@ -24,7 +24,7 @@ header {
   z-index: 100;
 }
 
-#menu-open{
+#menu-open {
   position: absolute;
   right: 25px;
   display: none;
@@ -52,6 +52,18 @@ nav ul li {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   text-decoration: none;
+  position: relative;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li:hover {
+  color: #7453fe;
+  transform: skewY(-5deg);
+}
+
+nav ul li:hover {
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 nav ul li a {
@@ -62,6 +74,7 @@ nav ul li a {
 #home {
   height: 100vh;
   display: flex;
+  padding-top: 50px;
 }
 
 #iAm {
@@ -81,7 +94,7 @@ nav ul li a {
 
 #triangle {
   position: absolute;
-  top: 12%;
+  top: 7%;
   left: 10%;
   z-index: -1;
   height: 150px;

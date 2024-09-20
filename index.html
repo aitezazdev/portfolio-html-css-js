@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - aitezazdev</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -17,9 +17,12 @@
   <body>
     <!-- Navbar -->
     <header>
-      <h2 style="font-size: 27px"><a href="#home" style="text-decoration: none; color: #000;">aitezaz.</a></h2>
+      <h2 style="font-size: 27px">
+        <a href="#home" style="text-decoration: none; color: #000">aitezaz.</a>
+      </h2>
       <nav>
         <ul>
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -41,8 +44,8 @@
           <h1>Aitezaz Sikandar</h1>
         </div>
         <div style="display: flex; gap: 20px">
-          <button id="portfolio">Portfolio</button>
-          <button>Reach Out</button>
+          <button id="portfolio" onclick="location.href='#projects'">My Work</button>
+          <button onclick="location.href='#contact'">Reach Out</button>
         </div>
       </div>
       <div id="home-right">
@@ -62,12 +65,16 @@
           <h2 id="about-me">About Me</h2>
           <h4>Front-End Developer</h4>
           <p>
-            Hey! I’m <span style="color: #7453fe; font-weight: 600;">Aitezaz Sikandar Khan</span>, a 5th-semester BS Computer Science
-            student at the University of Peshawar. My passion? Creating sleek,
-            responsive websites and innovative mobile apps that not only look
-            good but function even better. <br><br> Alongside my studies, I’m leveling up
-            my dev skills at SMIT, where I’m diving deep into web and mobile app
-            development, exploring the latest frameworks and technologies.
+            Hey! I’m
+            <span style="color: #7453fe; font-weight: 600"
+              >Aitezaz Sikandar Khan</span
+            >, a 5th-semester BS Computer Science student at the University of
+            Peshawar. My passion? Creating sleek, responsive websites and
+            innovative mobile apps that not only look good but function even
+            better. <br /><br />
+            Alongside my studies, I’m leveling up my dev skills at SMIT, where
+            I’m diving deep into web and mobile app development, exploring the
+            latest frameworks and technologies.
           </p>
           <button>My Resume</button>
         </div>
@@ -137,7 +144,7 @@
               and CSS, the design focuses on an elegant, minimalistic layout to
               provide users with a smooth and engaging browsing experience.
             </p>
-            <button class="check-project">Check It Out</button>
+            <button class="check-project" onclick="window.open('https://aitezazdev.github.io/task06-html-css-responsive-COFFEE-SHOP-website/', '_blank')">Check It Out</button>
           </div>
           <div class="project-img">
             <img src="./Images/Projects/coffee-shop.png" alt="coffee shop" />
@@ -155,7 +162,7 @@
               tracking, and smooth transitions between questions, providing an
               engaging user experience for trivia enthusiasts.
             </p>
-            <button class="check-project">Check It Out</button>
+            <button class="check-project" onclick="window.open('https://aitezazdev.github.io/classTask003-Interactive-Quiz-Game/', '_blank')">Check It Out</button>
           </div>
         </div>
         <div class="project">
@@ -167,7 +174,7 @@
               browsing across different devices, with an intuitive layout that
               highlights product details and pricing.
             </p>
-            <button class="check-project">Check It Out</button>
+            <button class="check-project" onclick="window.open('https://aitezazdev.github.io/task05-html-css-responsive-product-catalogue-website/', '_blank')">Check It Out</button>
           </div>
           <div class="project-img">
             <img src="./Images/Projects/phone-shop.png" alt="products" />
@@ -185,7 +192,7 @@
               making it easy for users to browse and discover new titles in an
               organized manner.
             </p>
-            <button class="check-project">Check It Out</button>
+            <button class="check-project" onclick="window.open('https://aitezazdev.github.io/task04-html-css-responsive-book-store-website/', '_blank')">Check It Out</button>
           </div>
         </div>
       </div>
@@ -224,7 +231,6 @@
             <p>Hostel Block B, University of Peshawar</p>
           </div>
         </div>
-        
       </div>
     </section>
 
@@ -233,12 +239,12 @@
       <div id="footer-info">
         <strong>Zaz Khan</strong>
         <div id="social-icons">
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-square-github"></i>
-          <i class="fa-brands fa-facebook"></i>
+          <a href="https://www.linkedin.com/in/aitezaz-sikandar" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/aitezazdev" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+          <a href="https://web.facebook.com/profile.php?id=100090390226056" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </div>
       </div>
-      <p style="font-size: 17px;">
+      <p style="font-size: 17px">
         Copyright &copy; 2024 <strong>Aitezaz,</strong> Some Rights Reserved.
       </p>
     </footer>
