@@ -13,10 +13,6 @@
   scroll-behavior: smooth;
 }
 
-body{
-  transition: background-color 0.5s ease;
-}
-
 header {
   display: flex;
   align-items: center;
