@@ -1,6 +1,7 @@
 var menuOpenIcon = document.getElementById("menu-open");
 var menuCloseIcon = document.getElementById("menu-close");
 var navLinks = document.getElementsByTagName("ul")[0];
+var navItems = navLinks.getElementsByClassName("links");
 
 function toggleMenu() {
   if (getComputedStyle(navLinks).right === "0px") {
@@ -21,6 +22,14 @@ function closeMenu() {
   menuOpenIcon.style.display = "block";
   menuCloseIcon.style.display = "none";
   navLinks.style.right = "-100%";
+}
+
+for (var i = 0; i < navItems.length; i++) {
+  navItems[i].addEventListener('click', function() {
+    if (window.innerWidth <= 900) {
+      closeMenu();
+    }
+  });
 }
 
 function checkMenuState() {
