@@ -1,5 +1,5 @@
-var menuOpen = document.getElementById("menu-open");
-var menuClose = document.getElementById("menu-close");
+var menuOpenIcon = document.getElementById("menu-open");
+var menuCloseIcon = document.getElementById("menu-close");
 var navLinks = document.getElementsByTagName("ul")[0];
 
 function toggleMenu() {
@@ -11,29 +11,29 @@ function toggleMenu() {
 }
 
 function openMenu() {
-  menuOpen.style.display = "none";
-  menuClose.style.display = "block";
+  menuOpenIcon.style.display = "none";
+  menuCloseIcon.style.display = "block";
   navLinks.style.display = "flex";
   navLinks.style.right = "0";
 }
 
 function closeMenu() {
-  menuOpen.style.display = "block";
-  menuClose.style.display = "none";
+  menuOpenIcon.style.display = "block";
+  menuCloseIcon.style.display = "none";
   navLinks.style.right = "-100%";
 }
 
 function checkMenuState() {
   if (window.innerWidth > 900) {
-    menuOpen.style.display = "none";
-    menuClose.style.display = "none";
+    menuOpenIcon.style.display = "none";
+    menuCloseIcon.style.display = "none";
     navLinks.style.display = "flex";
     navLinks.style.right = "0";
   } else if (window.innerWidth <= 900) {
     navLinks.style.display = "none";
     navLinks.style.right = "-100%";
-    menuOpen.style.display = "block";
-    menuClose.style.display = "none";
+    menuOpenIcon.style.display = "block";
+    menuCloseIcon.style.display = "none";
   }
 }
 
@@ -43,8 +43,8 @@ checkMenuState();
 window.addEventListener("resize", checkMenuState);
 
 // Event listeners for opening and closing the menu
-menuOpen.addEventListener("click", toggleMenu);
-menuClose.addEventListener("click", toggleMenu);
+menuOpenIcon.addEventListener("click", toggleMenu);
+menuCloseIcon.addEventListener("click", toggleMenu);
 
 // Function to toggle the theme
 const body = document.body;
