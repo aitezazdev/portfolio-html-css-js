@@ -13,6 +13,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  transition: background-color 0.5s ease;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -63,7 +67,6 @@ nav ul li {
 }
 
 nav ul li:hover {
-  color: #7453fe;
   transform: skewY(-5deg);
 }
 
@@ -306,11 +309,11 @@ button:active {
   height: 100%;
   width: 100%;
   object-fit: contain;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .project-img img:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .check-project {
@@ -498,6 +501,10 @@ body.dark-theme #zaz{
 
 body.dark-theme nav ul li a {
   color: #ffffff;
+}
+
+body.dark-theme nav ul li a:hover{
+  color: #7453fe;
 }
 
 body.dark-theme .card,

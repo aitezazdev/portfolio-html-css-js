@@ -161,6 +161,10 @@
     height: fit-content;
   }
 
+  .project-reverse{
+    flex-direction: column-reverse;
+  }
+
   .project-text {
     width: 100%;
     height: 100%;
@@ -200,13 +204,12 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 610px) {
   #home {
     flex-direction: column;
     height: fit-content;
     padding-top: 150px;
   }
-
   #home-left {
     width: 100%;
     z-index: 50;
@@ -219,10 +222,24 @@
   #home-right {
     width: 100%;
   }
-
   #triangle {
     top: -60%;
     height: 100px;
+  }
+}
+
+@media (max-width: 550px) {
+  #home-left {
+    width: 100%;
+    z-index: 50;
+  }
+
+  #home-left h1 {
+    font-size: 60px;
+  }
+
+  #home-right {
+    width: 100%;
   }
 
   #services-text {
