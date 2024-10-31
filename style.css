@@ -134,6 +134,11 @@ nav ul li a:hover {
   font-size: 80px;
 }
 
+#developer {
+  font-size: 18px;
+  text-align: center;
+}
+
 #home-left button {
   padding: 10px 15px;
   font-size: 15px;
@@ -197,7 +202,7 @@ button:active {
   width: 60%;
   margin: 0 auto;
   letter-spacing: 0.3px;
-  font-size: 16.5px;
+  font-size: 17px;
   color: #181818;
   font-family: "myFont";
 }
@@ -332,7 +337,6 @@ button:active {
 }
 
 #about-container {
-  /* height: 80vh; */
   width: 90%;
   margin: 50px auto 100px auto;
   display: flex;
@@ -359,17 +363,18 @@ button:active {
   height: 100%;
   width: 60%;
   padding: 30px;
-  gap: 20px;
+  gap: 15px;
 }
 
 #about-info p {
   font-family: "myFont";
   letter-spacing: 0.2px;
+  font-size: 17px;
 }
 
 #about-info h4 {
   font-size: 30px;
-  margin: 20px 0;
+  margin: 15px 0;
   color: #171616;
 }
 
