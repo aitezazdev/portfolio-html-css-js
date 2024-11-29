@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @font-face {
   font-family: "MyFont";
   src: url(./Font/wow.woff2);
@@ -9,8 +11,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -27,6 +32,7 @@ header {
 #zaz {
   text-decoration: none;
   color: #000;
+  font-family: "Roboto", sans-serif;
 }
 
 #menu-open {
@@ -132,6 +138,7 @@ nav ul li a:hover {
 
 #home-left h1 {
   font-size: 80px;
+  font-family: "Roboto", sans-serif;
 }
 
 #developer {
@@ -201,10 +208,8 @@ button:active {
 #services-text {
   width: 60%;
   margin: 0 auto;
-  letter-spacing: 0.3px;
-  font-size: 17px;
-  color: #181818;
-  font-family: "myFont";
+  letter-spacing: 0.4px;
+  font-size: 16.5px;
 }
 
 #cards {
@@ -257,11 +262,10 @@ button:active {
 .card p {
   height: 55%;
   width: 100%;
-  text-align: justify;
   padding: 15px 8px;
-  font-size: 15px;
-  font-size: 16px;
-  font-family: "MyFont";
+  text-align: justify;
+  font-size: 16.5px;
+  letter-spacing: 0.4;
 }
 
 #projects-container {
@@ -292,8 +296,8 @@ button:active {
 }
 
 .project-text p {
-  font-family: "myFont";
   font-size: 16.5px;
+  letter-spacing: 0.4;
 }
 
 .project-text h3 {
@@ -318,9 +322,8 @@ button:active {
 }
 
 .check-project {
-  padding: 10px 15px;
+  padding: 10px 12px;
   border-radius: 5px;
-  width: 130px;
   margin: 0 auto;
   font-size: 16px;
   cursor: pointer;
@@ -357,6 +360,7 @@ button:active {
 
 #about-me {
   font-size: 40px;
+  text-decoration: underline;
 }
 
 #about-info {
@@ -367,9 +371,8 @@ button:active {
 }
 
 #about-info p {
-  font-family: "myFont";
-  letter-spacing: 0.2px;
-  font-size: 17px;
+  letter-spacing: 0.4px;
+  font-size: 16.5px;
 }
 
 #about-info h4 {
